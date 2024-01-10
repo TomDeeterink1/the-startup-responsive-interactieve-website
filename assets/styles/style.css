@@ -1,0 +1,38 @@
+:root{
+/* colors */
+    /* Primary colors */
+    --midnight: #0E0940;
+         /* Midnight shades */
+         --midnight-low: #050316;
+         --midnight-high: #221C5F;
+    --daylight: #EDF6FF;
+        /* Daylight shades */
+        --daylight-low: #D4E5F7;
+        --daylight-high: #FAFDFF;
+    --red: #ff4f68;
+        /* red shades */
+        --red-low: #EF3953;
+        --red-high: #FF758C;
+    --purple: #5631E8;
+        /* purple shades */
+        --purple-low: #3414B1;
+        --purple-high: #7957FF;
+    --teal: #2AF9c9;
+        /* teal shades */
+        --teal-low: #00EBB4;
+        --teal-high: #66FFDC;
+    --yellow: #FFD833;
+        /* teal shades */
+        --yellow-low: #ffc919;
+        --yellow-high: #fbe36a;
+    /* Gray shades */
+    --meteor: #676394;
+    --clay: #a09dbe;
+    --silver: #DBDAE6;
+    --grey: #F3F3F7;
+    --white: #fff;
+/* end of colors */
+
+/* fonts */
+
+}
