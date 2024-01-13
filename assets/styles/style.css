@@ -2,14 +2,14 @@
 @font-face {
     font-family: 'CabinetGrotesk-Variable';
     src: 
-        url('./assets/fonts/CabinetGrotesk-Variable.ttf') format('truetype');
+        url('../assets/fonts/CabinetGrotesk-Variable.ttf') format('truetype');
         font-weight: 100 900;
 
 }
 @font-face {
     font-family: 'Rubik';
     src: 
-        url('./assets/fonts/Rubik-Regular.ttf') format('truetype');
+        url('../assets/fonts/Rubik-Regular.ttf') format('truetype');
         font-weight: 100 900;
 
 }
@@ -119,6 +119,7 @@
 /* body */
 body{
     margin: 0 auto;
+    
     
 }
 
@@ -237,6 +238,12 @@ header{
     display: flex;
     flex-direction: column;
     background-color: var(--midnight-low);
+    & .circle{
+        display: none;
+    }
+    & .triangle{
+        display: none;
+    }
     & .content{
 
         & h2{
@@ -463,6 +470,8 @@ footer{
         display: flex;
         flex-direction: column;
         background-color: var(--midnight-low);
+        flex-wrap: wrap;
+        max-width: 100%;
         & .content{
             max-width: 900px;
             margin: 0 auto ;
@@ -477,6 +486,7 @@ footer{
             }
         }
         & .team-grid{
+            overflow: hidden;
             max-width: 900px;
             margin: 0 auto ;
             display: grid;
@@ -490,4 +500,36 @@ footer{
             display: none;
         }  
     }
+
+    /* section 3 */
+
+    .s3{
+        padding: 4em 1em 4em 1em;
+        display: flex;
+        flex-direction: column;
+        
+            & .call-to-action{
+                background: linear-gradient(126deg, rgba(255,255,255,1) 55%, rgba(255,255,255,0) 55%), url("../images/triple1.jpg");
+                background-size:cover;
+                object-fit: cover;
+                margin: 0 auto;
+                max-width: 900px;
+                width: 900px;
+                border: 4px solid var(--purple);
+                border-radius: 8px;
+                padding: 0.8em 0.8em 1.5em 0.8em;
+                & h2{
+                    font-size: 32px;
+                    font-weight: 800;
+                    margin: 0;
+                    padding: 0em 1em 0.5em 0em;
+                    color: var(--purple);
+                    max-inline-size: 12em;
+                }
+                & .buttons{
+                    display: flex;
+                    gap: 0.8em;
+                }
+            }
+        }
 }
