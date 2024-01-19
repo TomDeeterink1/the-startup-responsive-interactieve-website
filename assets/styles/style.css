@@ -2,14 +2,14 @@
 @font-face {
     font-family: 'Cabinet';
     src: 
-        url('.https://fonts.googleapis.com/css2?family=Cabin&display=swap') format('truetype');
+        url('.https://fonts.googleapis.com/css2?family=Cabin&display=swap');
         font-weight: 100 900;
 
 }
 @font-face {
     font-family: 'Rubik';
     src: 
-        url('https://fonts.googleapis.com/css2?family=Rubik&display=swap') format('truetype');
+        url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
         font-weight: 100 900;
 
 }
@@ -52,12 +52,12 @@
 /* font styling */
     /* headings */
     h1 , h2 , h3 , h4{
-        font-family: Cabinet;
+        font-family: Rubik;
     }
     h1{
         font-weight: 800;
         font-size: 4em;
-        font-family: Cabinet;
+        font-family: Rubik;
     }
     h2{
         font-weight: 700;
@@ -93,13 +93,17 @@
     font-weight: 500;
     font-size: 1em;
     box-shadow: 4px -4px 0px 0px var(--midnight);
-    transition: ease-in 0.1s;
+    transition: cubic-bezier(0.49,0.23,0.33,0.8) 0.1s;
 
     &:hover{
         cursor: pointer;
         box-shadow: none;
-        transition: ease-out 0.2s;
-        transform: translateY(-6px)  translateX(6px);;
+        transition: cubic-bezier(0.79,0.8,0.01,0.95) 0.2s;
+        transform: translateY(-6px)  translateX(6px);
+    }
+    &:active{
+        transition: ease-in 0.2s;
+        transform: scale(90%) translateY(-6px)  translateX(6px);
     }
 }
 .primary{
@@ -177,13 +181,14 @@ header{
                 text-decoration: none;
                 color: var(--midnight);
                 padding: 0.8em;
-                transition: ease-out 0.1s;
+                border-radius: 0.1em;
+                transition: ease-out 0.12s;
 
                 &:hover{
                     background-color: var(--grey);
                     border-radius: 0.25em;
                     padding: 0.8em;
-                    transition: ease-in 0.1s;
+                    transition: ease-in 0.12s;
                 }
             }
         }
@@ -567,7 +572,7 @@ footer{
     /* section 3 */
 
     .s3{
-        padding: 4em 1em 4em 1em;
+        padding: 7em 1em 7em 1em;
         display: flex;
         flex-direction: column;
         
