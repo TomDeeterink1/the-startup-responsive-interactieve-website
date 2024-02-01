@@ -2,7 +2,7 @@
 @font-face {
     font-family: 'Cabinet';
     src: 
-        url('.https://fonts.googleapis.com/css2?family=Cabin&display=swap');
+        url('https://fonts.googleapis.com/css2?family=Cabin&display=swap');
         font-weight: 100 900;
 
 }
@@ -296,6 +296,7 @@ header{
         gap: 2em;
         overflow-x: scroll;
         scroll-behavior: smooth;
+        scroll-snap-type: mandatory;
         padding: 1em 0em;
         & article{
             transition: ease-in 0.2s;
